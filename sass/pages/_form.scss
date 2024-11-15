@@ -1,0 +1,83 @@
+.form {
+  padding: 4rem 10rem;
+  display: flex;
+  gap: 2rem;
+
+  &__from-content {
+    width: 55%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &__line {
+      width: 2rem;
+      border-top: 2px solid $primary-color;
+      margin: 0 auto;
+    }
+    &__img {
+      width: 261px;
+      height: 206px;
+      display: block;
+      margin: 0 auto;
+    }
+    h3 {
+      color: $text-color;
+    }
+    p {
+      color: $color-grey;
+    }
+  }
+
+  &__form-data {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &__name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      &__textarea {
+        resize: none;
+      }
+
+      &__input {
+        padding: 1.3rem;
+        border-radius: 2rem;
+        width: 80%;
+        border: 1px solid $info-color-light;
+        &__option {
+          padding: 1rem;
+        }
+      }
+    }
+    &__confirmation {
+      display: flex;
+      padding-left: 9rem;
+      position: relative;
+      gap: 1rem;
+      &__check-box {
+        accent-color: $primary-color;
+      }
+
+      p {
+        color: $color-grey;
+      }
+      &__check {
+        width: 2rem;
+        height: 2rem;
+        background-color: #ccc;
+        border-radius: 4px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}

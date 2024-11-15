@@ -1,0 +1,126 @@
+.contactus-section {
+  position: relative;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    padding: 0.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      padding-right: 5rem;
+      width: 50%;
+      hr {
+        border-bottom: 0.1px solid $color-grey;
+        width: 100%;
+      }
+      p {
+        color: $color-grey;
+      }
+      gap: 2rem;
+
+      &__house-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h4 {
+          color: $text-color;
+        }
+        &__features {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+          gap: 1rem;
+          max-width: 40rem;
+        }
+
+        &__features1 {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-weight: 700;
+        }
+      }
+      &__owner-details {
+        &__owner-data {
+          display: flex;
+          justify-content: space-between;
+        }
+        &__contact {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 0.9rem 2rem;
+        }
+      }
+    }
+    &__images {
+      position: relative;
+      &__blurr {
+        position: absolute;
+        right: -10rem;
+        top: -10rem;
+        z-index: 0;
+      }
+      &__video-img {
+        position: relative;
+      }
+      button {
+        padding: 1rem 1rem 0.8rem 1.3rem;
+        border-radius: 50%;
+        background-color: lightgray;
+        border: 1px solid lightgray;
+      }
+      &__video-icon {
+        position: absolute;
+        border: none;
+        top: 50%;
+        left: 50%;
+        // padding: 1rem 1.5rem;
+        // border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &__video-big {
+        position: absolute;
+        left: -2rem;
+        bottom: -2rem;
+        width: 16rem;
+        border-radius: 0.6rem;
+        &:hover {
+          scale: 1.1;
+          transition: all 1s ease;
+        }
+      }
+      &__video-small1 {
+        position: absolute;
+        width: 6rem;
+        height: 5rem;
+        left: 50%;
+        bottom: -2rem;
+        border-radius: 0.6rem;
+        &:hover {
+          scale: 1.1;
+          transition: all 1s ease;
+        }
+      }
+      &__video-small2 {
+        position: absolute;
+        width: 6rem;
+        height: 5rem;
+        right: 7%;
+        bottom: -2rem;
+        border-radius: 0.6rem;
+        &:hover {
+          scale: 1.1;
+          transition: all 1s ease;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: $text-color;
+  }
+}

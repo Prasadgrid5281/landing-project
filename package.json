@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.80.6"
+  },
+  "name": "advanced-landing-project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "sass --watch sass/main.scss:css/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
